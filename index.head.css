@@ -1,3 +1,8 @@
+.row {
+    height:  74px;
+    background-color: red;
+}
+
 #search {
     top: 20px;
 }
