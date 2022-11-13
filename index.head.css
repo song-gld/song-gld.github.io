@@ -1,6 +1,7 @@
 .row-top {
     display:  block;
     height:  74px;
+    border:  1px solid red;
     background-color: red;
 }
 
