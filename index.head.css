@@ -1,7 +1,31 @@
-.rowtop {
-    background-color: red;
-    height: 75px;    
+body {
+    background-color: #f8f9fa;
 }
-.ttt {
-    background-color: skyblue;
+a {
+    outline: none;
+    color: inherit;
+}
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+    color: inderit;
+}
+.rowtop {
+    position: fied;    
+    line-height: 75px;
+    height: 75px;  
+    background-color: #fff;  
+
+}
+
+#search {
+    margin-top: 20px;
+    float: left;
+    width: 50%;    
+}
+.dh {
+    float: right;
 }
