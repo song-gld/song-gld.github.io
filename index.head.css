@@ -15,14 +15,14 @@ a:hover {
 }
 .rowtop {
     position: fied;    
-    line-height: 75px;
+    /*line-height: 75px;*/
     height: 75px;  
     background-color: #fff;  
 
 }
 
 #search {
-    margin-top: 20px;
+    
     float: left;
     width: 50%;    
 }
