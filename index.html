@@ -11,12 +11,12 @@
 <body>      
     <div class="container-fluid rowtop">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <!-- 日期显示 -->
                 <div id="pDate" style="display: inline;"></div></div>
-            <div class="col-md-4">                
+            <div class="col-md-3">                
                 <!-- 天气预报显示 -->
-                <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tz&skin=pitaya" frameborder="0" width="100%" height="30" allowtransparency="true" style="display: inline;"></iframe>
+                <iframe width="500" height="40" frameborder="0" scrolling="no" hspace="0" src="https://i.tianqi.com/?c=code&a=getcode&id=40&icon=1"></iframe>
             </div>
         </div> 
         <div class="row">
@@ -26,9 +26,11 @@
                 <div class="panda-eye left"></div>
                 <div class="panda-eye right"></div>
             </div>
-            <form action="https://cn.bing.com/search" target="_blank" method="get">
+            <div class="col-md-6 col-md-offset-1">
+                <form action="https://cn.bing.com/search" target="_blank" method="get">
                 <input type="search" name="q" id="search" placeholder="请输入搜索内容" class="form-control">                         
-            </form>  
+            </form> 
+        </div>              
             <a class="dh" href="dh/cn/index.html">导航<a/>  
         </div>         
     </div>     
