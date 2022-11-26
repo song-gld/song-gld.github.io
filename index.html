@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>刚来的网站</title>
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
@@ -11,10 +11,11 @@
 <body>      
     <div class="container-fluid rowtop">
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-5 col-sm-6">
                 <!-- 日期显示 -->
-                <div id="pDate" style="display: inline;"></div></div>
-            <div class="col-md-3">                
+                <div id="pDate"></div>
+            </div>
+            <div class="col-md-7 hidden-sm hidden-xs hidden-md">                
                 <!-- 天气预报显示 -->
                 <iframe width="500" height="40" frameborder="0" scrolling="no" hspace="0" src="https://i.tianqi.com/?c=code&a=getcode&id=40&icon=1"></iframe>
             </div>
@@ -26,11 +27,11 @@
                 <div class="panda-eye left"></div>
                 <div class="panda-eye right"></div>
             </div>
-            <div class="col-md-6 col-md-offset-1">
+            <div class="col-md-10 col-md-offset-1 col-sm-offset-1 col-xs-offset-2">
                 <form action="https://cn.bing.com/search" target="_blank" method="get">
                 <input type="search" name="q" id="search" placeholder="请输入搜索内容" class="form-control">                         
             </form> 
-        </div>              
+        </div class="col-md-1 col-sm-1 col-xs-1" >              
             <a class="dh" href="dh/cn/index.html">导航<a/>  
         </div>         
     </div>     

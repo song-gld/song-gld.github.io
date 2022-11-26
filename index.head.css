@@ -23,6 +23,7 @@ a:hover {
     position: fixed;
     width: 80px;
     height: 80px;
+    top: 28px;
 }
 .panda {
     width: 100%;
@@ -44,9 +45,9 @@ a:hover {
     top: 26%;
 }
 
-#search {
-    
+#search {    
     /*float: left;*/
-    width: 50%;    
-    left: 100px;
+    width: 80%;    
+    margin-bottom: 50px;
+
 }
