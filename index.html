@@ -10,15 +10,18 @@
 </head>
 <body>      
     <div class="container-fluid rowtop">
-        <div class="row">
-            <div class="col-md-5 col-sm-6">
+        <div class="row topDiv">
+            <div class="col-md-1 hidden-sm hidden-xs">
+                <!-- 天气预报显示 -->
+                <iframe width="430" height="40" frameborder="0" scrolling="no" hspace="0" src="https://i.tianqi.com/?c=code&a=getcode&id=40&icon=1"></iframe>
+            </div>
+            <div class="col-md-3  col-sm-4 col-sm-offset-7 col-xs-8 col-xs-offset-2">
                 <!-- 日期显示 -->
                 <div id="pDate"></div>
-            </div>
-            <div class="col-md-7 hidden-sm hidden-xs hidden-md">                
-                <!-- 天气预报显示 -->
-                <iframe width="500" height="40" frameborder="0" scrolling="no" hspace="0" src="https://i.tianqi.com/?c=code&a=getcode&id=40&icon=1"></iframe>
-            </div>
+            </div>            
+            <div class="col-md-1 col-sm-1 col-xs-2">              
+                <a class="dh" href="dh/cn/index.html">导航<a/>  
+            </div> 
         </div> 
         <div class="row">
             <div class="logo">
@@ -30,11 +33,8 @@
             <div class="col-md-10 col-md-offset-1 col-sm-offset-1 col-xs-offset-2">
                 <form action="https://cn.bing.com/search" target="_blank" method="get">
                 <input type="search" name="q" id="search" placeholder="请输入搜索内容" class="form-control">                         
-            </form> 
-        </div class="col-md-1 col-sm-1 col-xs-1" >              
-            <a class="dh" href="dh/cn/index.html">导航<a/>  
-        </div>         
-    </div>     
+            </form>               
+        </div>     
     <script src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/showDate.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
