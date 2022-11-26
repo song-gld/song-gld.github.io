@@ -16,16 +16,37 @@ a:hover {
 .rowtop {
     position: fied;    
     /*line-height: 75px;*/
-    height: 75px;  
-    background-color: #fff;  
-
+    padding-bottom: 0px;  
+    background-color: #fff; 
+}
+.logo {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+}
+.panda {
+    width: 100%;
+}
+.panda-eye {
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    transform-origin: center left;
+}
+.panda-eye.left {
+    left: 43%;
+    top: 26%;
+}
+.panda-eye.right {
+    left: 61%;
+    top: 26%;
 }
 
 #search {
     
-    float: left;
+    /*float: left;*/
     width: 50%;    
-}
-.dh {
-    float: right;
+    left: 100px;
 }
