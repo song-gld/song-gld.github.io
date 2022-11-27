@@ -26,7 +26,7 @@ a:hover {
     position: fixed;
     width: 80px;
     height: 80px;
-    top: 32px;
+    top: 10px;
 }
 .panda {
     width: 100%;
@@ -53,5 +53,4 @@ a:hover {
     width: 100%;  
     margin-top: 20px;  
     margin-bottom: 50px;
-
 }
