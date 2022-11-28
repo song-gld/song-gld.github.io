@@ -547,6 +547,7 @@ function fnDate(){
     var year=date.getFullYear();//当前年份
     var month=date.getMonth();//当前月份
     var day=date.getDate();//天    
-    var lunar=calendar.solar2lunar(year, month + 1, 26);
+    var lunar=calendar.solar2lunar(year, month + 1, day);
     oDiv.innerHTML=lunar;
+    console.log(lunar);
 }      
