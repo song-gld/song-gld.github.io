@@ -483,7 +483,7 @@ var calendar = {
 
 
 
-         return year + '年' + m + '月' + d + '日 ' +  "\u661f\u671f" + cWeek + " " + calendar.getAnimal(year) + '年' + (isLeap?"\u95f0":'')+calendar.toChinaMonth(month) + calendar.toChinaDay(day);
+         return m + '月' + d + '日 ' +  "\u661f\u671f" + cWeek + " " + calendar.getAnimal(year) + '年' + (isLeap?"\u95f0":'')+calendar.toChinaMonth(month) + calendar.toChinaDay(day);
          // return {'lYear':year,'lMonth':month,'lDay':day,'Animal':calendar.getAnimal(year),'IMonthCn':(isLeap?"\u95f0":'')+calendar.toChinaMonth(month),'IDayCn':calendar.toChinaDay(day),'cYear':y,'cMonth':m,'cDay':d,'gzYear':gzY,'gzMonth':gzM,'gzDay':gzD,'isToday':isToday,'isLeap':isLeap,'nWeek':nWeek,'ncWeek':"\u661f\u671f"+cWeek,'isTerm':isTerm,'Term':Term,'astro':astro};
     },
  

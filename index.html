@@ -5,40 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>刚来的网站</title>
     <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="index.head.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.head.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">    
 </head>
 <body>      
-    <div class="container-fluid rowtop">
-        <div class="row topDiv">
-            <div class="col-md-4 col-md-offset-5 hidden-sm hidden-xs text-right">
-                <!-- 天气预报显示 -->
-                <iframe width="450" height="40" frameborder="0" scrolling="no" hspace="0" src="https://i.tianqi.com/?c=code&a=getcode&id=40&icon=1"></iframe>
+    <div class="container-fluid">
+        <div class="rowtop">    
+            <div class="row topDiv rowtop">
+                <div class="col-md-4 col-md-offset-5 hidden-sm hidden-xs text-right">
+                    <!-- 天气预报显示 -->
+                    <iframe width="450" height="40" frameborder="0" scrolling="no" hspace="0" src="https://i.tianqi.com/?c=code&a=getcode&id=40&icon=1"></iframe>
+                </div>
+                <div class="col-xs-9 col-xs-offset-2 col-sm-5 col-md-3 col-md-offset-0 text-right">
+                    <!-- 日期显示 -->
+                    <div id="pDate" style="display:inline-block;padding-right: 10px;"></div>
+                    <a class="dh" href="dh/cn/index.html" >导航<a/>  
+                </div>
+            </div> 
+            <div class="row">
+                <div class="logo">
+                    <!-- panda -->
+                    <img src="img/logo.png" class="panda">
+                    <div class="panda-eye left"></div>
+                    <div class="panda-eye right"></div>
+                </div>
+                <div class="col-md-8 col-md-offset-2 col-sm-offset-1 col-xs-offset-2">
+                    <form action="https://cn.bing.com/search" target="_blank" method="get">
+                        <input type="search" name="q" id="search" placeholder="请输入搜索内容" class="form-control">
+                        <div>
+                            <ul>
+                                <li>必应</li>
+                                <li>开发者</li>
+                            </ul>
+                        </div>
+                    </form> 
+                </div>              
             </div>
-            <div class="col-xs-9 col-xs-offset-2 col-sm-5 col-md-3 col-md-offset-0 text-right">
-                <!-- 日期显示 -->
-                <div id="pDate" style="display:inline-block;padding-right: 10px;"></div>
-                <a class="dh" href="dh/cn/index.html" >导航<a/>  
-            </div>
-        </div> 
-        <div class="row">
-            <div class="logo">
-                <!-- panda -->
-                <img src="img/logo.png" class="panda">
-                <div class="panda-eye left"></div>
-                <div class="panda-eye right"></div>
-            </div>
-            <div class="col-md-8 col-md-offset-2 col-sm-offset-1 col-xs-offset-2">
-                <form action="https://cn.bing.com/search" target="_blank" method="get">
-                    <input type="search" name="q" id="search" placeholder="请输入搜索内容" class="form-control">
-                    <div>
-                        <ul>
-                            <li>必应</li>
-                            <li>开发者</li>
-                        </ul>
-                    </div>
-                </form>               
-        </div>     
+        </div>    
+        <!-- begin timeline     -->
+        <div class="timeline-contain">
+            <ul class="timeline" id="timeline">
+              <li class="li complete">
+                <div class="timestamp">              
+                  <span class="date">2019/11/05<span>
+                </div>
+                <div class="status">
+                  <h4> 注册github </h4>
+                </div>
+              </li>
+              <li class="li complete">
+                <div class="timestamp">              
+                  <span class="date">2021/6/7<span>
+                </div>
+                <div class="status">
+                  <h4> 域名注册 </h4>
+                </div>
+              </li>
+              <li class="li complete">
+                <div class="timestamp">              
+                  <span class="date">2022/11/15<span>
+                </div>
+                <div class="status">
+                  <h4> 网站导航上线 </h4>
+                </div>
+              </li>
+              <li class="li">
+                <div class="timestamp">              
+                  <span class="date">...<span>
+                </div>
+                <div class="status">
+                  <h4> ... </h4>
+                </div>
+              </li>          
+              <li class="li">
+                <div class="timestamp">              
+                  <span class="date">TBD<span>
+                </div>
+                <div class="status">
+                  <h4> 网站完成 </h4>
+                </div>
+              </li>          
+            </ul>
+        </div>
+        <!-- end timeline --> 
+    </div>
+    </div>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/showDate.js"></script>
     <script type="text/javascript" src="js/index.js"></script>

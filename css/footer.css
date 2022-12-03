@@ -1,0 +1,93 @@
+.timeline-contain {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.timeline {  
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.li {
+  transition: all 200ms ease-in;
+}
+
+.timestamp {
+  margin-bottom: 20px;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 100;
+}
+
+.status {
+  padding: 0px 40px;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #D6DCE0;
+  position: relative;
+  transition: all 200ms ease-in;
+}
+.status h4 {
+  font-weight: 600;
+  font-size: 15px;
+  padding-top: 5px;
+}
+.status:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  position: absolute;
+  top: -10px;
+  left: 43%;
+  transition: all 200ms ease-in;
+}
+
+.li.complete .status {
+  border-top: 2px solid #a3a3a3;
+}
+.li.complete .status:before {
+  background-color: #a3a3a3;
+  border: none;
+  transition: all 200ms ease-in;
+}
+.li.complete .status h4 {
+  color: #23527c;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 700px) {
+  .timeline {
+    list-style-type: none;
+    display: block;
+  }
+
+  .li {
+    transition: all 200ms ease-in;
+    display: flex;
+    width: inherit;
+  }
+
+  .timestamp {
+    width: 100px;
+  }
+
+  .status:before {
+    left: -8%;
+    top: 30%;
+    transition: all 200ms ease-in;
+  }
+}
+html, body {
+  width: 100%;
+  /*height: 100%;
+  display: flex;
+  justify-content: center;*/
+  font-family: "Titillium Web", sans serif;
+  color: #758D96;
+}

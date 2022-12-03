@@ -2,6 +2,7 @@ $(function(){
     $('#search').on('click', function(event){    
         console.log("your 13 key press")    
     })   
+    // start panda eyes
     const eyes = document.querySelectorAll('.panda-eye');
     window.addEventListener('mousemove', (e) => {
         eyes.forEach(eye => {
@@ -11,5 +12,7 @@ $(function(){
             const rot = (radian * (180 / Math.PI) * -1) + 90;
             eye.style.transform = `rotate(${rot}deg)`;            
         });
-    }); 
+    });
+    // end panda eyes    
 })
+
