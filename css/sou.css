@@ -341,74 +341,49 @@ a {
 #menu {
     width: 50px;
     height: 50px;
-    transform: scale(0.8);
+    transform: translate(-50%, -50%);
     position: absolute;
-    right: 10px;
-    top: 36px;
+    right: -20px;
+    top: 79px;
     z-index: 2000000;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.4s ease;
 }
-
-#menu i {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 24px auto;
-    width: 30px;
-    height: 2px;
-    background: #777;
+#menu:hover .bar {
+  box-shadow: 1px 1px 7px 1px RGBa(0, 0, 0, 0.3);
 }
-
-#menu i:before {
-    content: '';
-    width: 20px;
-    height: 2px;
-    top: -8px;
-    background: #777;
-    position: absolute;
-    right: 0;
+#menu .bar {
+  width: 30px;
+  height: 5px;
+  background: #fff;
+  box-shadow: 1px 1px 3px RGBa(0, 0, 0, 0.4);
+  border-radius: 2px;
+  transition: 0.4s ease;
 }
-
-#menu i:after {
-    content: '';
-    width: 20px;
-    height: 2px;
-    bottom: -8px;
-    background: #777;
-    position: absolute;
-    left: 0;
+#menu .bar:not(:first-child) {
+  margin-top: 6px;
 }
 
 #menu.on {
-    right: 380px;
-    background: #29f;
-    border-radius: 25px;
-    box-shadow: 0 6px 8px rgba(36, 159, 253, .3);
+    right: 336px;
+    transform: translate(-50%, -50%) rotateY(180deg);
 }
 
-#menu.on i {
-    width: 20px;
-    background: #fff;
+#menu.on .bar {
+    transform: rotateY(180deg) rotateX(360deg);
 }
-
-#menu.on i:before {
-    top: -5px;
-    transform: rotate(45deg);
-    width: 14px;
-    right: -1px;
-    left: auto;
-    background: #fff;
-}
-
-#menu.on i:after {
-    bottom: -5px;
+#menu.on .bar:first-child {
     transform: rotate(-45deg);
-    width: 14px;
-    right: -1px;
-    left: auto;
-    background: #fff;
+    margin-top: 4px;
 }
+#menu.on .bar:nth-child(2) {
+    opacity: 0;
+}
+#menu.on .bar:nth-child(3) {
+    margin-top: -16px;
+    transform: rotate(45deg);
+}
+
 
 .side {
     width: 357px;
@@ -417,7 +392,7 @@ a {
     position: absolute;
     right: 0;
     z-index: 2000;
-    background: #222d46;
+    background: #e2e1e4;
     transition: 0.3s all linear;
 }
 
