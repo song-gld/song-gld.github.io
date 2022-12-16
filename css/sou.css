@@ -343,8 +343,8 @@ a {
     height: 50px;
     transform: translate(-50%, -50%);
     position: absolute;
-    right: -20px;
-    top: 79px;
+    right: 350px;
+    top: 49px;
     z-index: 2000000;
     cursor: pointer;
     transition: 0.4s ease;
@@ -688,7 +688,16 @@ a {
         width: 320px;
         height: 100px;
     }
-
+    .con .sou form .se {
+        width: 34px;
+        height: 34px;
+        left: 4px;
+        top: 3px;
+    }
+    .con .sou form .wd {
+        width: 90%;
+        height: 80%;
+    }
     .con .sou form .wd:focus {
         background: #f1f1f1;
         box-shadow: none;
@@ -730,7 +739,10 @@ a {
 
     .home,
     #menu {
-        top: 5px;
+        top: 45px;
+    }
+    .timeline-contain {
+        display: none;
     }
 }
 

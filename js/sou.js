@@ -2,10 +2,10 @@
 var se_list_preinstall = {
     '1': {
         id: 1,
-        title: "百度",
-        url: "https://www.baidu.com/s",
-        name: "wd",
-        img: "./icon/baidu.ico",
+        title: "必应",
+        url: "https://cn.bing.com/search",
+        name: "q",
+        img: "./img/bing.ico",
     },
     '2': {
         id: 2,
@@ -13,13 +13,6 @@ var se_list_preinstall = {
         url: "https://www.google.com/search",
         name: "q",
         img: "./icon/google_1.png",
-    },
-    '3': {
-        id: 3,
-        title: "必应",
-        url: "https://cn.bing.com/search",
-        name: "q",
-        img: "./icon/bing.ico",
     }
 };
 
