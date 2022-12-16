@@ -709,7 +709,7 @@ a {
     }
 
     #menu.on {
-        right: 270px;
+        right: 203px;
     }
 
     .side {
@@ -739,7 +739,7 @@ a {
 
     .home,
     #menu {
-        top: 45px;
+        top: 40px;
     }
     .timeline-contain {
         display: none;

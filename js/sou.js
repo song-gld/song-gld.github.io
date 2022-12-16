@@ -9,10 +9,10 @@ var se_list_preinstall = {
     },
     '2': {
         id: 2,
-        title: "谷歌",
-        url: "https://www.google.com/search",
+        title: "秘迹",
+        url: "https://mijisou.com",
         name: "q",
-        img: "./icon/google_1.png",
+        img: "./img/mjs.png",
     }
 };
 
