@@ -9,10 +9,10 @@ var se_list_preinstall = {
     },
     '2': {
         id: 2,
-        title: "秘迹",
-        url: "https://mijisou.com",
-        name: "q",
-        img: "./img/mjs.png",
+        title: "开发者搜索",
+        url: "https://kaifa.baidu.com/searchPage",
+        name: "wd",
+        img: "https://kaifa.baidu.com/assets/favicon.ico",
     }
 };
 
