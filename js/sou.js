@@ -19,35 +19,23 @@ var se_list_preinstall = {
 // 主页快捷方式【预设】
 var quick_list_preinstall = {
     '1': {
-        title: "哔哩哔哩",
-        url: "https://www.bilibili.com/",
-        img: "./icon/bilibili.png",
-        explain: "哔哩哔哩 (゜-゜)つロ 干杯~",
+        title: "河北考试院",
+        url: "http://www.hebeea.edu.cn/",
+        img: "http://www.hebeea.edu.cn/favicon.ico",
+        explain: "河北教育考试院官网",
     },
     '2': {
         title: "GitHub",
         url: "https://github.com/",
-        img: "./icon/github.ico",
+        img: "https://github.githubassets.com/favicons/favicon.svg",
         explain: "GitHub",
     },
     '3': {
-        title: "V2EX",
-        url: "https://www.v2ex.com/",
-        img: "./icon/v2ex.png",
-        explain: "V2EX",
-    },
-    '4': {
-        title: "Steam",
-        url: "https://store.steampowered.com/",
-        img: "./icon/steam.ico",
-        explain: "Steam",
-    },
-    '5': {
-        title: "scp基金会",
-        url: "http://scp-wiki-cn.wikidot.com/",
-        img: "./icon/scp.png",
-        explain: "控制，收容，保护",
-    },
+        title: "CodePen",
+        url: "https://codepen.io/",
+        img: "./img/codepen.ico",
+        explain: "css/js/html 在线展示",
+    },    
 };
 
 // 主题方案【预设】
@@ -76,7 +64,7 @@ var themes_preinstall = {
 
 //背景图片
 var bg_img_preinstall = {
-    "type" : "3",// 1:使用主题默认的背景图片、2:关闭背景图片、3:使用自定义的背景图片
+    "type" : "2",// 1:使用主题默认的背景图片、2:关闭背景图片、3:使用自定义的背景图片
     "path" : "https://cdn.jsdelivr.net/gh/yeetime/img/20200627173550.png",//背景图片
 };
 
@@ -355,7 +343,7 @@ function quickData() {
     var quick_list = getQuickList();
     for (var i in quick_list) {
         html += "<li class='quick' title='" + quick_list[i]['explain'] + "'>\
-                        <a href='" + quick_list[i]['url'] + "'>\
+                        <a target = '_blank' href='" + quick_list[i]['url'] + "'>\
                             <i style='background-image: url(" + quick_list[i]['img'] + ");'></i>\
                             " + quick_list[i]['title'] + "\
                         </a>\
