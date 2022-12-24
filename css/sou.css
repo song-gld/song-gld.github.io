@@ -72,12 +72,17 @@ a {
     transition: 1s all;
     margin: auto;
     min-width: 320px;
-    height: 380px;
+    /*height: 380px;*/
     /*position: absolute;*/
     left: 0;
     top: -100px;
     right: 0;
     bottom: 0;
+}
+.con:after {
+    content: "";
+    display: block;
+    clear: both;    
 }
 
 .con .shlogo {
@@ -294,6 +299,11 @@ a {
     margin: 0 auto;
     width: 100%;
     justify-content: left;
+}
+.quick-div:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .quick-ul {

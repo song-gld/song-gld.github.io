@@ -35,7 +35,13 @@ var quick_list_preinstall = {
         url: "https://codepen.io/",
         img: "./img/codepen.ico",
         explain: "css/js/html 在线展示",
-    },    
+    },  
+    '4': {
+        title: "VBA代码集",
+        url: "./vba/index.html",
+        img: "https://logodix.com/logo/701195.jpg",
+        explain: "VBA代码集",
+    },  
 };
 
 // 主题方案【预设】
