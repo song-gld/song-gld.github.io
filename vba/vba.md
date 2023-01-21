@@ -44,9 +44,8 @@
       Do While f <> ""
         If f <> ThisWorkbook.Name Then
           Workbooks.Open Filename:=file_path & f
-          '操作打开的工作簿
-          
-          
+          '操作打开的工作簿      
+          '......
           
           ActiveWorkbook.Close savechanges:=True
         End If
