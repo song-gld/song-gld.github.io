@@ -338,6 +338,10 @@
     </div>
     <!--搜索框和书签 end-->  
     <div class="container">
+        <div class="row text-center">
+            <span id="jinrishici-sentence">正在加载今日诗词....</span>
+            <div id="poem_info"></div>
+        </div>
         <div class="row">
             <div class="col-md-4 todos">
                 <header>
@@ -355,8 +359,8 @@
                     <ul class="todo" id="completed"></ul>
                 </div>
             </div>
-            <div class="col-md-4">sdf</div>
-            <div class="col-md-4">sdf</div>
+            <div class="col-md-4">今日新闻</div>
+            <div class="col-md-4">历史上的今天</div>
         </div>
         <div class="row">
             2
@@ -411,8 +415,13 @@
     <script type="text/javascript" src="js/showDate.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script src="js/todo.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
     <script>
         fnDate();
+        jinrishici.load(function(result) {        
+        var info = document.querySelector("#poem_info")        
+        info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+      });
     </script>
 </body>
 </html>
