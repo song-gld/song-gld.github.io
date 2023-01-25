@@ -10,13 +10,14 @@
     <link rel="stylesheet" type="text/css" href="css/footer.css"> 
     <link rel="stylesheet" type="text/css" href="css/reset.min.css">
     <link rel="stylesheet" type="text/css" href="css/todo.css">
+    <link rel="stylesheet" type="text/css" href="css/news.css">
     <link rel="stylesheet" href="./css/sou.css"> 
     <script src="./js/jquery-3.4.1.min.js"></script>   
     <script src="./js/jQuery.rTabs.js"></script>
     <script src="./js/js.cookie.js"></script>
     <script src="./js/sou.js"></script>
 </head>
-<body>     
+<body style=" overflow-y:auto;">     
     <div class="container-fluid">
         <div class="rowtop">    
             <div class="row topDiv rowtop">
@@ -338,14 +339,14 @@
     </div>
     <!--搜索框和书签 end-->  
     <div class="container">
-        <div class="row text-center">
+        <div class="row text-center poem">
             <span id="jinrishici-sentence">正在加载今日诗词....</span>
             <div id="poem_info"></div>
         </div>
         <div class="row">
             <div class="col-md-4 todos">
                 <header>
-                    <input type="text" placeholder="Enter an activity.." id="item">
+                    <input type="text" placeholder="请输入待办事项" id="item">
                     <button id="add">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path class="fill" d="M16,8c0,0.5-0.5,1-1,1H9v6c0,0.5-0.5,1-1,1s-1-0.5-1-1V9H1C0.5,9,0,8.5,0,8s0.5-1,1-1h6V1c0-0.5,0.5-1,1-1s1,0.5,1,1v6h6C15.5,7,16,7.5,16,8z"/></g></svg>
                     </button>
@@ -359,12 +360,21 @@
                     <ul class="todo" id="completed"></ul>
                 </div>
             </div>
-            <div class="col-md-4">今日新闻</div>
-            <div class="col-md-4">历史上的今天</div>
-        </div>
-        <div class="row">
-            2
-        </div>
+            <div class="col-md-4 news">
+                <header>今日新闻</header>
+                <div>
+                    <ul id="news"></ul>
+                </div>
+            </div>
+            <div class="col-md-4 todays" style="background: #461629; border: 2px solid #461629">
+               <header>历史上的今天</header>
+                <div>
+                    <ul id="todays">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>        
     </div>
     <!-- begin timeline     -->
     <div class="timeline-contain">
@@ -416,6 +426,7 @@
     <script type="text/javascript" src="js/index.js"></script>
     <script src="js/todo.js"></script>
     <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/news.js"></script>
     <script>
         fnDate();
         jinrishici.load(function(result) {        

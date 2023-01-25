@@ -1,7 +1,16 @@
+.poem {
+  margin: 18px 0;
+}
+#jinrishici-sentence {
+  font-size: 22px;
+  color: #2f2f35;
+  margin-top: 20px;
+}
+
 .todos header {
   width: 100%;
-  height: 80px;
-  padding: 15px;  
+  height: 40px;
+  padding: 2px;  
   background: #2f2f35;
   box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
   border-radius: 10px;  
@@ -9,14 +18,15 @@
   border-bottom-right-radius: 0;
 }
 .todos header input {
-  width: 100%;
-  height: 50px;
+  width: 95%;
+  height: 30px;
   float: left;
   color: #fff;
   font-size: 15px;
   font-weight: 400;
-  text-indent: 18px;
-  padding: 0 60px 0 0;
+  text-indent: 18px;  
+  margin: 2px 8px;
+  padding-left: 3px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 5px 25px 25px 5px;
   border: 0px;
@@ -28,12 +38,12 @@
 }
 
 .todos header button {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
 
   position:absolute;
-  top:15px;
-  right:15px;
+  top:3px;
+  right:26px;
   z-index:2;
 
   border-radius: 25px;
@@ -202,12 +212,12 @@
 }
 
 .todos ul.todo#todo:empty:after {
-  content: 'You have nothing to-do!';
+  content: '暂无待办事项';
   margin: 15px 0 0 0;
 }
 
 .todos ul.todo#completed:empty:after {
-  content: 'You have yet to complete any tasks.';
+  content: '暂无完成事项';
 }
 
 .todos ul.todo#todo:after,
