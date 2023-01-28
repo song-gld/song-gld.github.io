@@ -50,3 +50,21 @@ a:hover {
 iframe {
     margin-top: -8px;
 }
+@media (min-height: 420px) {
+    .panda-eye {
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        height: 4px;
+        width: 4px;
+        transform-origin: center left;
+    }
+    .panda-eye.left {
+        left: 71%;
+        top: 31%;
+    }
+    .panda-eye.right {
+        left: 104%;
+        top: 32%;
+    }
+}
