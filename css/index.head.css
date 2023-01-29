@@ -50,7 +50,7 @@ a:hover {
 iframe {
     margin-top: -8px;
 }
-@media (min-height: 420px) {
+@media (max-width: 420px) {
     .panda-eye {
         background: #fff;
         border-radius: 50%;
