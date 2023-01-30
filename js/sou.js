@@ -42,6 +42,12 @@ var quick_list_preinstall = {
         img: "https://logodix.com/logo/701195.jpg",
         explain: "VBA代码集",
     },  
+    '5': {
+        title: "Hello github",
+        url: "https://hellogithub.com/  ",
+        img: "https://hellogithub.com/favicon/favicon-16x16.png",
+        explain: "VBA代码集",
+    },  
 };
 
 // 主题方案【预设】

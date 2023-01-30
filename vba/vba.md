@@ -1,7 +1,8 @@
 # VBA代码集
-
+* [1.新建文件或者文件夹](#id01)
+* [2.新建文件或者文件夹](#id02)
 ## 文件|文件夹相关
-### 1.新建文件或者文件夹
+### 1.新建文件或者文件夹 <a id="id01"></a>
 带入的参数扩展名为“xls/xlsx”，就建立文件，没有扩展名则建立文件夹。
 
     Sub make_file(file_name As String)
@@ -36,7 +37,7 @@
       End If
     End Sub
 
-### 2.遍历文件夹下所有excel文件（不包含子文件夹）
+### 2.遍历文件夹下所有excel文件（不包含子文件夹）<a id="id02"></a>
 
     Sub open_file()
       file_path = ThisWorkbook.Path & "\"
