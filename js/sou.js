@@ -283,6 +283,7 @@ function searchData() {
     var defaultSe = se_list[se_default];
     if (defaultSe) {
         $(".search").attr("action", defaultSe["url"]);
+        $(".search").attr("target", "_blank")
         $(".se").attr("src", defaultSe["img"]);
         $(".wd").attr("name", defaultSe["name"]);
     }
