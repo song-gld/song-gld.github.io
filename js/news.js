@@ -15,12 +15,5 @@ $(function(){
     //     } 
     // });
 })
-function getL(){
-   $.get("https://www.mxnzp.com/api/history/today?type=1&app_id=ipxswkmoqiszlwzm&app_secret=QjlCV3duZkQ2NkVEN1VHNmNyTU5KUT09",function(data,status){
-            console.log(data)
-            for(var i =0; i < 11; i++) {
-               $('#todays').append('<li>' + data.data[i].title + '</li>') 
-            }
-        })   
-}
+
 
