@@ -36,6 +36,7 @@
   font-weight: 600;
   font-size: 12px;
   padding-top: 5px;
+  margin-top: 18px;
 }
 .status:before {
   content: "";
