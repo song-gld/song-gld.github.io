@@ -11,7 +11,7 @@
   padding-left: 15px;
 }
 #news {  
-  border: 2px solid #2f2f35;
+  border: 2px solid #5698c3;
   border-top: 0;
   border-radius: 10px;
   border-top-left-radius: 0;
@@ -21,24 +21,4 @@
 }
 .col-md-4 {
   margin-bottom: 10px;
-}
-.todays header {
-  height: 40px;
-  line-height: 40px;
-  background: #461629;
-  border-radius: 8px; 
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0; 
-  font-size: 18px;
-  font-weight: 600;
-  color: #e2e1e4;
-  padding-left: 15px;
-}
-#todays {
-  border: 2px solid #461629;
-  border-top: 0;
-  border-radius: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  padding: 5px 15px;
 }
