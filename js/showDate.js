@@ -564,5 +564,5 @@ function life() {
   var leftHour = parseInt(leftDate/1000/60/60)%24;
   var leftMinute = parseInt(leftDate/100/60)%60;
   var leftSecond = parseInt(leftDate/1000)%60;
-  life.innerHTML = "你今年已经" + old +  "岁了，" + "迄今为止，你已经在地球上存活了" + parseInt((nowDate - new Date(birthDate)/1000/60/60/24)) + "天，" + "你还可以存活" + leftDay + "天" + leftHour + "小时" + leftMinute + "分钟" + leftSecond + "秒。";
+  life.innerHTML = "你今年已经" + old +  "岁了，" + "<br/>" + "迄今为止，你已经在地球上存活了" + parseInt((nowDate - new Date(birthDate)/1000/60/60/24)) + "天，" + "<br/>" + "你还可以存活" + leftDay + "天" + leftHour + "小时" + leftMinute + "分钟" + leftSecond + "秒。";
 }
