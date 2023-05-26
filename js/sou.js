@@ -48,6 +48,12 @@ var quick_list_preinstall = {
         img: "https://hellogithub.com/favicon/favicon-16x16.png",
         explain: "VBA代码集",
     },  
+    '6': {
+        title: "吾爱破解",
+        url: "https://www.52pojie.cn/",
+        img: "https://www.52pojie.cn/favicon.ico",
+        explain: "52破解",
+    },  
 };
 
 // 主题方案【预设】
