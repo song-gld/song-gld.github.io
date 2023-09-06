@@ -567,5 +567,5 @@ function life() {
   var leftSecond = parseInt(leftDate/1000)%60;
   var persent = liveDate/(liveDate + leftDay) * 100;
   persent = persent.toFixed(4);
-  life.innerHTML = "你今年已经" + old +  "岁了，" + "<br/>" + "迄今为止，你已经在地球上存活了" + liveDate + "天，" + "<br/>" + "你还可以存活" + leftDay + "天" + leftHour + "小时" + leftMinute + "分钟" + leftSecond + "秒。" + "人生百分比：" + persent;
+  life.innerHTML = "你今年已经" + old +  "岁了，" + "<br/>" + "迄今为止，你已经在地球上存活了" + liveDate + "天，" + "<br/>" + "你还可以存活" + leftDay + "天" + leftHour + "小时" + leftMinute + "分钟" + leftSecond + "秒。" + "人生百分比：" + persent + "<br/>" + "<progress value="20"></progress>";
 }
