@@ -53,6 +53,12 @@ var quick_list_preinstall = {
         url: "https://www.52pojie.cn/",
         img: "https://www.52pojie.cn/favicon.ico",
         explain: "52破解",
+    }, 
+    '7': {
+        title: "活动资讯",
+        url: "https://www.huodong5.com/",
+        img: "https://www.huodong5.com/favicon.ico",
+        explain: "国内免费有奖活动",
     },  
 };
 
