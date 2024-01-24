@@ -60,6 +60,12 @@ var quick_list_preinstall = {
         img: "https://www.huodong5.com/favicon.ico",
         explain: "国内免费有奖活动",
     },  
+    '8': {
+        title: "今日热榜",
+        url: "https://tophub.today/",
+        img: "https://file.ipadown.com/tophub/assets/images/favicon/favicon-16x16.png",
+        explain: "每日热门榜单集合",
+    }, 
 };
 
 // 主题方案【预设】
